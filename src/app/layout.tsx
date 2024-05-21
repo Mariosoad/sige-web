@@ -1,8 +1,17 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat, Poppins } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+export const monserrat = Montserrat({
+  variable: '--font-monserrat',
+  subsets: ['latin']
+})
+export const poppins = Poppins({
+  variable: '--font-poppins',
+  weight: ['400', '500', '600', '800', '900'],
+  subsets: ['latin'],
+})
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${poppins.variable} ${monserrat.variable}`}>{children}</body>
     </html>
   )
 }
