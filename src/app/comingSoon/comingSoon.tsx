@@ -12,7 +12,7 @@ export default function ComingSoon() {
           ¡Descubre la Solución Definitiva para la <br />
           Organización de Equipos! Registra tu espacio  <br /> de trabajo y maximiza la productividad. <br />
           Diseña, colabora y alcanza el éxito.</p>
-        <a className='text-[12px] font-medium underline text-[#595959]'>¡Visita nuestro Whitepaper!</a>
+        <a href='https://dreams-organization-2.gitbook.io/gobernanza/' target='_blank' className='text-[12px] font-medium underline text-[#595959]'>¡Visita nuestro Whitepaper!</a>
 
         <a className='font-semibold border-[1px] rounded-md border-[#1F69FF] text-[#1F69FF] p-4 px-14'>Comunidad</a>
         <CountdownDay />
