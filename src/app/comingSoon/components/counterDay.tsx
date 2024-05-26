@@ -10,7 +10,7 @@ interface TimeLeft {
 }
 
 const getNextComingSoonDate = (): Date => {
-    return new Date(`06/01/2024`);
+    return new Date(`06/21/2024`);
 };
 
 const comingSoonIncoming = (): boolean => {
@@ -76,7 +76,7 @@ const CountdownDays: React.FC = () => {
     };
 
     return (
-        <h2 className='text-6xl font-extrabold color-title'>
+        <h2 className='text-4xl 2xl:text-6xl font-extrabold color-title'>
             <b>{padNumber(timeLeft.days)}D</b> <b>{padNumber(timeLeft.hours)}H </b>
             <b>{padNumber(timeLeft.minutes)}M</b>
         </h2>

@@ -1,14 +1,16 @@
 import Image from 'next/image'
 import InformationScroll from './components/informationScroll'
 import CountdownDay from './components/counterDay'
+import { useEffect, useRef } from 'react';
 
 export default function ComingSoon() {
+
   return (
-    <main className="flex w-full h-screen flex-row items-center justify-between">
-      <div className="z-10 max-w-5xl w-full items-start justify-between text-sm flex flex-col gap-5 p-24 px-28">
-        <h1 className='text-8xl font-extrabold color-title pb-2'>SIGE.</h1>
-        <p className='text-4xl font-bold text-[#607BD5]'>Optimiza tu espacio,<br /> eleva tu éxito</p>
-        <p className='text-[16px] leading-7 font-medium text-[#595959]'>
+    <main className="flex w-full flex-col 2xl:flex-row items-center justify-between">
+      <div className="z-10 w-full py-12 px-8 2xl:w-1/2 2xl:p-24 2xl:px-28 items-start justify-between text-sm flex flex-col gap-5">
+        <h1 className='text-6xl 2xl:text-8xl font-extrabold color-title pb-2'>SIGE.</h1>
+        <p className='text-2xl 2xl:text-4xl font-bold text-[#607BD5]'>Optimiza tu espacio,<br /> eleva tu éxito</p>
+        <p className='text-[14px] 2xl:text-[16px] leading-7 font-medium text-[#595959]'>
           ¡Descubre la Solución Definitiva para la <br />
           Organización de Equipos! Registra tu espacio  <br /> de trabajo y maximiza la productividad. <br />
           Diseña, colabora y alcanza el éxito.</p>
@@ -45,7 +47,7 @@ export default function ComingSoon() {
 
         </div>
       </div>
-      <div className="z-10 max-w-5xl w-full h-screen overflow-y-scroll scroll-smooth flex flex-col gap-10 back-blue-radial items-center justify-between text-sm p-14 lg:flex">
+      <div className="z-10 w-full 2xl:w-1/2 h-screen overflow-y-scroll scroll-smooth flex flex-col gap-8 2xl:gap-10 back-blue-radial items-center justify-between text-sm px-6 2xl:px-14 lg:flex">
         <InformationScroll />
       </div>
 
